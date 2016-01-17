@@ -1,0 +1,55 @@
+<?php
+function custom_account_menu() {
+  $items = array();
+  $items['user/edit'] = array(
+    'title'            => 'Edit Profile',
+    'description'      => 'Edit own profile',
+    'page callback'    => 'custom_account_user_edit',
+    'access callback'  => 'custom_account_user_edit_access',
+    'type'             => MENU_LOCAL_TASK,
+    'file'             => 'user.pages.inc',
+    'file path'        => 'modules/user'
+  );
+  return $items;
+}
+
+function custom_account_user_edit() {
+  global $user;
+  $account = user_load($user->uid);
+  return drupal_get_form('user_profile_form', $account);
+}
+
+function custom_account_user_edit_access(){
+  global $user;
+  return user_edit_access($user);
+}
+
+/**
+ * Implements hook_field_extra_fields()
+ */
+function custom_account_field_extra_fields() {
+  $extra = array();
+  $extra['user']['user'] = array(
+    'display' => array(
+      'user_picture' => array(
+        'label' => t('User Picture from Core'),
+        'weight' => -5,
+        'description' => t('This can be anything. I have not seen where this is rendered.'),
+      ),
+    ),
+  );
+  return $extra;
+}
+
+/**
+* Implements hook_entity_info_alter()
+*/
+function custom_account_entity_info_alter(&$entity_info) {
+  $entity_info['user']['view_modes'][] = array(
+    'author_bio' => array(
+      'label' => t('Author Bio'),
+      'custom settings' => TRUE,
+    ),
+  );
+}
+?>

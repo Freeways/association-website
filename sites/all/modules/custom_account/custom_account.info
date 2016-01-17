@@ -1,0 +1,6 @@
+name = Custom account
+description = Some custom user account features
+dependencies[] = user
+package = Custom
+core = 7.x
+php = 5.2
