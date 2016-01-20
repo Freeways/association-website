@@ -233,6 +233,10 @@ p:last-child {
   z-index: 100;
 }
 
+.views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section{
+    margin: 0px auto;
+}
+
 /** A la une **/
 
 #block-views-actualites-a-la-une-block-1{
