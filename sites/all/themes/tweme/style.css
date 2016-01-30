@@ -583,3 +583,26 @@ p:last-child {
     -moz-box-shadow: 3px 3px 6px 0 #A9A9A9;
     -webkit-box-shadow: 3px 3px 6px #A9A9A9;
 }
+
+/* Formulaire d'adhésion */
+form.webform-client-form-125 .form-item{
+ margin-top: 10px; 
+}
+
+form.webform-client-form-125 .form-type-select{
+  display: block !important;
+  float: left;
+  margin-left: 5px;
+}
+
+form.webform-client-form-125 select{
+ width: auto !important;
+}
+
+form.webform-client-form-125 input[type=radio]{
+ margin-left: 0 !important;
+}
+
+form.webform-client-form-125 .webform-component--adresse{
+ clear: both;
+}
