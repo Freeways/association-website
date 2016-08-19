@@ -4,3 +4,10 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+/stats/
+/icon/
+/awstats-icon
+/awstatsicons
+/phpmyadmin3x7f9a/
+/.gitignore
