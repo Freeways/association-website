@@ -1,0 +1,7 @@
+AuthName "freeways.tn statistics"
+AuthType Basic
+AuthUserFile /home/freeways/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

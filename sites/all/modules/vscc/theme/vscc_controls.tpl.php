@@ -1,13 +1,20 @@
 <?php
-
 /**
  * @file
  * Views Slideshow Configurable Controls HTML template.
  */
-print '<div id="vscc_controls_' . $variables['vss_id'] .'" class="' . $classes . '">';
-print $rendered_control_previous;
-if (isset($rendered_control_pause)) {
-  print $rendered_control_pause;
-}
-print $rendered_control_next;
-print '</div>';
+?>
+
+<div id="vscc_controls_<?php print $variables['vss_id'] ?>" class="<?php print $classes; ?>">
+  <?php if (isset($rendered_control_previous)): ?>
+    <?php print $rendered_control_previous; ?>
+  <?php endif; ?>
+
+  <?php if (isset($rendered_control_pause)): ?>
+    <?php print $rendered_control_pause; ?>
+  <?php endif; ?>
+
+  <?php if (isset($rendered_control_next)): ?>
+    <?php print $rendered_control_next; ?>
+  <?php endif; ?>
+</div>

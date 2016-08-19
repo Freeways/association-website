@@ -226,11 +226,7 @@ p:last-child {
 }
 
 .view-slideshow .views-slideshow-controls-bottom{
-  position: absolute;
-  margin-top: -25px;
-  left: 45%;
-  right: 45%;
-  z-index: 100;
+  display: none;
 }
 
 .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section{
