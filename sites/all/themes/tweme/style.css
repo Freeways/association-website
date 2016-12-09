@@ -393,7 +393,7 @@ p:last-child {
 .page-user-edit .form-item-field-civilite-und input,
 .page-user-edit .form-item-language input
 {
-  margin-left: 0;
+/*  margin-left: 0; */
   width: 15px;
   height: 15px;
 }
@@ -596,7 +596,7 @@ form.webform-client-form-125 select{
 }
 
 form.webform-client-form-125 input[type=radio]{
- margin-left: 0 !important;
+/* margin-left: 0 !important;*/
 }
 
 form.webform-client-form-125 .webform-component--adresse{
