@@ -5,9 +5,9 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-/stats/
+/awstats-icon/
+/awstatsicons/
 /icon/
-/awstats-icon
-/awstatsicons
 /phpmyadmin3x7f9a/
-/.gitignore
+/stats/
+
