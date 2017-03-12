@@ -1,0 +1,23 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 940px;
+}
+
+.view-partenaires img{
+    margin: auto;
+}
+
+#block-views-partenaires-block-1 h3{
+    color: #34373e !important;
+}
+
+.view .date-nav-wrapper .date-prev{
+    right: 92px !important;
+}
+
+
+.radio input[type=radio]{
+    margin-left: 0;
+}
